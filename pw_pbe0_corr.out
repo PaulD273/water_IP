@@ -1,0 +1,635 @@
+
+     Program PWSCF v.7.4 starts on  6Dec2024 at 12:45:54 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     1 processors
+
+     MPI processes distributed on     1 nodes
+     8624 MiB available memory on the printing compute node when the environment starts
+
+     Waiting for input...
+     Reading input from standard input
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  4
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE0
+                           (   6   4   8   4   0   0   0)
+     EXX-fraction              =        0.25
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+     EXX fraction changed:   0.73
+
+     gamma-point specific algorithms are used
+
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+     EXX: q-point mesh:     1    1    1
+     EXX: grid of k+q points same as grid of k-points
+
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum       11449   11449   2869               922329   922329  115313
+
+     Using Slab Decomposition
+
+
+
+     bravais-lattice index     =            1
+     lattice parameter (alat)  =      30.0000  a.u.
+     unit-cell volume          =   27000.0000 (a.u.)^3
+     number of atoms/cell      =            3
+     number of atomic types    =            2
+     number of electrons       =         8.00
+     number of Kohn-Sham states=           10
+     kinetic-energy cutoff     =      40.0000  Ry
+     charge density cutoff     =     160.0000  Ry
+     cutoff for Fock operator  =     160.0000  Ry
+     scf convergence threshold =      1.0E-06
+     mixing beta               =       0.7000
+     number of iterations used =            8  plain     mixing
+     Exchange-correlation= PBE0
+                           (   6   4   8   4   0   0   0)
+     EXX-fraction              =        0.73
+
+     celldm(1)=  30.000000  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (   0.000000   1.000000   0.000000 )  
+               a(3) = (   0.000000   0.000000   1.000000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.000000  0.000000 )  
+               b(2) = (  0.000000  1.000000  0.000000 )  
+               b(3) = (  0.000000  0.000000  1.000000 )  
+
+
+     PseudoPot. # 1 for H  read from file:
+     /home/paolo/water_2/pp/H_ONCV_PBE-1.2.upf
+     MD5 check sum: bf21e08b90ac4ce7d0149ac4e8138190
+     Pseudo is Norm-conserving, Zval =  1.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of  602 points,  2 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+
+     PseudoPot. # 2 for O  read from file:
+     /home/paolo/water_2/pp/O_ONCV_PBE-1.2.upf
+     MD5 check sum: e36c48deb68f4e355fffe4602be2c42c
+     Pseudo is Norm-conserving, Zval =  6.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of  602 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+
+     atomic species   valence    mass     pseudopotential
+     H                 1.00     1.00794     H ( 1.00)
+     O                 6.00    15.99900     O ( 1.00)
+
+     No symmetry found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1        O      tau(   1) = (   0.1267221   0.1523579   0.0009940  )
+         2        H      tau(   2) = (   0.1925544   0.1456839  -0.0005238  )
+         3        H      tau(   3) = (   0.1113146   0.0896293  -0.0131509  )
+
+     number of k points=     1
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   2.0000000
+
+     Dense  grid:   461165 G-vectors     FFT dimensions: ( 125, 125, 125)
+
+     Estimated max dynamical RAM per process >     657.34 MB
+     EXX: ACE will be initialized later
+
+     Initial potential from superposition of free atoms
+
+     starting charge       7.9948, renormalised to       8.0000
+
+     negative rho (up, down):  4.255E-02 0.000E+00
+     Starting wfcs are random
+
+     total cpu time spent up to now is        2.7 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    40.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-02,  avg # of iterations = 11.0
+
+     negative rho (up, down):  1.204E-02 0.000E+00
+
+     total cpu time spent up to now is        6.4 secs
+
+     total energy              =     -33.96511683 Ry
+     estimated scf accuracy    <       0.22369770 Ry
+
+     iteration #  2     ecut=    40.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.80E-03,  avg # of iterations =  3.0
+
+     negative rho (up, down):  6.795E-03 0.000E+00
+
+     total cpu time spent up to now is        8.1 secs
+
+     total energy              =     -34.00413224 Ry
+     estimated scf accuracy    <       0.13053414 Ry
+
+     iteration #  3     ecut=    40.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.63E-03,  avg # of iterations = 10.0
+
+     negative rho (up, down):  7.760E-05 0.000E+00
+
+     total cpu time spent up to now is       10.3 secs
+
+     total energy              =     -34.03099646 Ry
+     estimated scf accuracy    <       0.00355810 Ry
+
+     iteration #  4     ecut=    40.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     c_bands:  1 eigenvalues not converged
+     ethr =  4.45E-05,  avg # of iterations = 20.0
+
+     negative rho (up, down):  8.514E-05 0.000E+00
+
+     total cpu time spent up to now is       14.0 secs
+
+     total energy              =     -34.03141302 Ry
+     estimated scf accuracy    <       0.00020163 Ry
+
+     iteration #  5     ecut=    40.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.52E-06,  avg # of iterations = 15.0
+
+     negative rho (up, down):  1.897E-05 0.000E+00
+
+     total cpu time spent up to now is       16.5 secs
+
+     total energy              =     -34.03143099 Ry
+     estimated scf accuracy    <       0.00002394 Ry
+
+     iteration #  6     ecut=    40.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.99E-07,  avg # of iterations = 19.0
+
+     total cpu time spent up to now is       19.6 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 ( 57657 PWs)   bands (ev):
+
+   -25.0240 -12.1377  -9.6193  -7.0606  -1.2391  -0.0012   0.2242   0.4354
+     0.4562   0.5108
+
+     highest occupied, lowest unoccupied level (ev):    -7.0606   -1.2391
+
+!    total energy              =     -34.03143573 Ry
+     estimated scf accuracy    <       0.00000023 Ry
+
+     charge density inside the Wigner-Seitz cell:    8.00000000
+
+     reference position (x0):         3.99075622    4.31047608   -0.02891513 bohr
+
+     Dipole moments (with respect to x0):
+     Elect   0.4295  -0.5916  -0.1336 au (Ha),   1.0917  -1.5036  -0.3396 Debye
+     Ionic  -0.0000   0.0000   0.0000 au (Ha),  -0.0000   0.0000   0.0000 Debye
+     Total   0.4295  -0.5916  -0.1336 au (Ha),   1.0917  -1.5036  -0.3396 Debye
+
+     Electrons quadrupole moment        -21.57471256 a.u. (Ha)
+          Ions quadrupole moment          7.02223687 a.u. (Ha)
+         Total quadrupole moment        -14.55247570 a.u. (Ha)
+
+     *********    MAKOV-PAYNE CORRECTION    *********
+
+     Makov-Payne correction with Madelung constant =   2.8373
+
+     Makov-Payne correction     0.00000000 Ry =  0.000 eV (1st order, 1/a0)
+                                0.00008568 Ry =  0.001 eV (2nd order, 1/a0^3)
+                                0.00008568 Ry =  0.001 eV (total)
+
+!    Total+Makov-Payne energy  =     -34.03135004 Ry
+     Corrected vacuum level    =       0.03077040 eV
+
+     convergence has been achieved in   6 iterations
+
+     Using ACE for calculation of exact exchange
+
+     EXX grid:   461165 G-vectors     FFT dimensions: ( 125, 125, 125)
+     ACE projected onto    10 (nbndproj) and applied to    10 (nbnd) bands
+
+     EXX: now go back to refine exchange calculation
+
+     total cpu time spent up to now is       22.6 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    40.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     c_bands:  2 eigenvalues not converged
+     ethr =  2.99E-07,  avg # of iterations = 40.0
+
+     total cpu time spent up to now is       32.6 secs
+
+     total energy              =     -34.00442752 Ry
+     estimated scf accuracy    <       0.00248442 Ry
+
+     iteration #  2     ecut=    40.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  3.11E-05,  avg # of iterations =  2.0
+
+     total cpu time spent up to now is       34.0 secs
+
+     total energy              =     -34.00486588 Ry
+     estimated scf accuracy    <       0.00046751 Ry
+
+     iteration #  3     ecut=    40.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  5.84E-06,  avg # of iterations =  2.0
+
+     total cpu time spent up to now is       35.6 secs
+
+     total energy              =     -34.00497254 Ry
+     estimated scf accuracy    <       0.00001868 Ry
+
+     iteration #  4     ecut=    40.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     c_bands:  4 eigenvalues not converged
+     ethr =  2.34E-07,  avg # of iterations = 20.0
+
+     total cpu time spent up to now is       39.3 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 ( 57657 PWs)   bands (ev):
+
+   -34.3603 -17.1531 -14.7850 -12.3800  -0.1037   0.3436   0.5184   0.5534
+     0.5687   0.5777
+
+     highest occupied, lowest unoccupied level (ev):   -12.3800   -0.1037
+
+!    total energy              =     -34.00497444 Ry
+     estimated scf accuracy    <       0.00000050 Ry
+
+     charge density inside the Wigner-Seitz cell:    8.00000000
+
+     reference position (x0):         3.99075622    4.31047608   -0.02891513 bohr
+
+     Dipole moments (with respect to x0):
+     Elect   0.4654  -0.6408  -0.1446 au (Ha),   1.1830  -1.6289  -0.3675 Debye
+     Ionic  -0.0000   0.0000   0.0000 au (Ha),  -0.0000   0.0000   0.0000 Debye
+     Total   0.4654  -0.6408  -0.1446 au (Ha),   1.1830  -1.6289  -0.3675 Debye
+
+     Electrons quadrupole moment        -20.96126851 a.u. (Ha)
+          Ions quadrupole moment          7.02223687 a.u. (Ha)
+         Total quadrupole moment        -13.93903164 a.u. (Ha)
+
+     *********    MAKOV-PAYNE CORRECTION    *********
+
+     Makov-Payne correction with Madelung constant =   2.8373
+
+     Makov-Payne correction     0.00000000 Ry =  0.000 eV (1st order, 1/a0)
+                                0.00010056 Ry =  0.001 eV (2nd order, 1/a0^3)
+                                0.00010056 Ry =  0.001 eV (total)
+
+!    Total+Makov-Payne energy  =     -34.00487388 Ry
+     Corrected vacuum level    =       0.02946644 eV
+
+     convergence has been achieved in   4 iterations
+
+     Using ACE for calculation of exact exchange
+     ACE projected onto    10 (nbndproj) and applied to    10 (nbnd) bands
+
+     total energy              =     -34.00702603 Ry
+     Harris-Foulkes estimate   =     -34.00702639 Ry
+     est. exchange err (dexx)  =       0.00205159 Ry
+     - averaged Fock potential =      11.12368607 Ry
+     + Fock energy (ACE)       =      -5.58161117 Ry
+
+     EXX: now go back to refine exchange calculation
+
+     total cpu time spent up to now is       41.8 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    40.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     c_bands:  2 eigenvalues not converged
+     ethr =  2.34E-07,  avg # of iterations = 20.0
+
+     total cpu time spent up to now is       45.5 secs
+
+     total energy              =     -34.00744889 Ry
+     estimated scf accuracy    <       0.00014031 Ry
+
+     iteration #  2     ecut=    40.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     c_bands:  1 eigenvalues not converged
+     ethr =  1.75E-06,  avg # of iterations = 20.0
+
+     total cpu time spent up to now is       48.3 secs
+
+     total energy              =     -34.00747732 Ry
+     estimated scf accuracy    <       0.00002986 Ry
+
+     iteration #  3     ecut=    40.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     c_bands:  3 eigenvalues not converged
+     ethr =  3.73E-07,  avg # of iterations = 20.0
+
+     total cpu time spent up to now is       51.3 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 ( 57657 PWs)   bands (ev):
+
+   -34.3194 -17.1088 -14.7750 -12.3744  -0.0979   0.3546   0.5185   0.5534
+     0.5685   0.5713
+
+     highest occupied, lowest unoccupied level (ev):   -12.3744   -0.0979
+
+!    total energy              =     -34.00748415 Ry
+     estimated scf accuracy    <       0.00000085 Ry
+
+     charge density inside the Wigner-Seitz cell:    8.00000000
+
+     reference position (x0):         3.99075622    4.31047608   -0.02891513 bohr
+
+     Dipole moments (with respect to x0):
+     Elect   0.4744  -0.6533  -0.1473 au (Ha),   1.2058  -1.6606  -0.3745 Debye
+     Ionic  -0.0000   0.0000   0.0000 au (Ha),  -0.0000   0.0000   0.0000 Debye
+     Total   0.4744  -0.6533  -0.1473 au (Ha),   1.2058  -1.6606  -0.3745 Debye
+
+     Electrons quadrupole moment        -20.81177950 a.u. (Ha)
+          Ions quadrupole moment          7.02223687 a.u. (Ha)
+         Total quadrupole moment        -13.78954263 a.u. (Ha)
+
+     *********    MAKOV-PAYNE CORRECTION    *********
+
+     Makov-Payne correction with Madelung constant =   2.8373
+
+     Makov-Payne correction     0.00000000 Ry =  0.000 eV (1st order, 1/a0)
+                                0.00010451 Ry =  0.001 eV (2nd order, 1/a0^3)
+                                0.00010451 Ry =  0.001 eV (total)
+
+!    Total+Makov-Payne energy  =     -34.00737964 Ry
+     Corrected vacuum level    =       0.02914938 eV
+
+     convergence has been achieved in   3 iterations
+
+     Using ACE for calculation of exact exchange
+     ACE projected onto    10 (nbndproj) and applied to    10 (nbnd) bands
+
+     total energy              =     -34.00759710 Ry
+     Harris-Foulkes estimate   =     -34.00759755 Ry
+     est. exchange err (dexx)  =       0.00011295 Ry
+     - averaged Fock potential =      11.17261518 Ry
+     + Fock energy (ACE)       =      -5.59111697 Ry
+
+     EXX: now go back to refine exchange calculation
+
+     total cpu time spent up to now is       53.8 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    40.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     c_bands:  1 eigenvalues not converged
+     ethr =  3.73E-07,  avg # of iterations = 20.0
+
+     total cpu time spent up to now is       56.8 secs
+
+     total energy              =     -34.00762133 Ry
+     estimated scf accuracy    <       0.00000747 Ry
+
+     iteration #  2     ecut=    40.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     c_bands:  2 eigenvalues not converged
+     ethr =  9.33E-08,  avg # of iterations = 20.0
+
+     total cpu time spent up to now is       59.8 secs
+
+     total energy              =     -34.00762281 Ry
+     estimated scf accuracy    <       0.00000160 Ry
+
+     iteration #  3     ecut=    40.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     c_bands:  2 eigenvalues not converged
+     ethr =  2.00E-08,  avg # of iterations = 20.0
+
+     total cpu time spent up to now is       62.9 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 ( 57657 PWs)   bands (ev):
+
+   -34.2938 -17.0876 -14.7647 -12.3634  -0.0962   0.3578   0.5187   0.5536
+     0.5682   0.5705
+
+     highest occupied, lowest unoccupied level (ev):   -12.3634   -0.0962
+
+!    total energy              =     -34.00762322 Ry
+     estimated scf accuracy    <       0.00000006 Ry
+
+     charge density inside the Wigner-Seitz cell:    8.00000000
+
+     reference position (x0):         3.99075622    4.31047608   -0.02891513 bohr
+
+     Dipole moments (with respect to x0):
+     Elect   0.4767  -0.6566  -0.1480 au (Ha),   1.2117  -1.6688  -0.3763 Debye
+     Ionic  -0.0000   0.0000   0.0000 au (Ha),  -0.0000   0.0000   0.0000 Debye
+     Total   0.4767  -0.6566  -0.1480 au (Ha),   1.2117  -1.6688  -0.3763 Debye
+
+     Electrons quadrupole moment        -20.77612925 a.u. (Ha)
+          Ions quadrupole moment          7.02223687 a.u. (Ha)
+         Total quadrupole moment        -13.75389238 a.u. (Ha)
+
+     *********    MAKOV-PAYNE CORRECTION    *********
+
+     Makov-Payne correction with Madelung constant =   2.8373
+
+     Makov-Payne correction     0.00000000 Ry =  0.000 eV (1st order, 1/a0)
+                                0.00010554 Ry =  0.001 eV (2nd order, 1/a0^3)
+                                0.00010554 Ry =  0.001 eV (total)
+
+!    Total+Makov-Payne energy  =     -34.00751769 Ry
+     Corrected vacuum level    =       0.02907385 eV
+
+     convergence has been achieved in   3 iterations
+
+     Using ACE for calculation of exact exchange
+     ACE projected onto    10 (nbndproj) and applied to    10 (nbnd) bands
+
+     total energy              =     -34.00763026 Ry
+     Harris-Foulkes estimate   =     -34.00763025 Ry
+     est. exchange err (dexx)  =       0.00000703 Ry
+     - averaged Fock potential =      11.18448466 Ry
+     + Fock energy (ACE)       =      -5.59337472 Ry
+
+     EXX: now go back to refine exchange calculation
+
+     total cpu time spent up to now is       65.4 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    40.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     c_bands:  2 eigenvalues not converged
+     ethr =  2.00E-08,  avg # of iterations = 20.0
+
+     total cpu time spent up to now is       68.4 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 ( 57657 PWs)   bands (ev):
+
+   -34.2914 -17.0853 -14.7685 -12.3662  -0.0959   0.3584   0.5188   0.5536
+     0.5682   0.5705
+
+     highest occupied, lowest unoccupied level (ev):   -12.3662   -0.0959
+
+!    total energy              =     -34.00763204 Ry
+     estimated scf accuracy    <       0.00000043 Ry
+
+     charge density inside the Wigner-Seitz cell:    8.00000000
+
+     reference position (x0):         3.99075622    4.31047608   -0.02891513 bohr
+
+     Dipole moments (with respect to x0):
+     Elect   0.4776  -0.6577  -0.1483 au (Ha),   1.2138  -1.6718  -0.3769 Debye
+     Ionic  -0.0000   0.0000   0.0000 au (Ha),  -0.0000   0.0000   0.0000 Debye
+     Total   0.4776  -0.6577  -0.1483 au (Ha),   1.2138  -1.6718  -0.3769 Debye
+
+     Electrons quadrupole moment        -20.76513673 a.u. (Ha)
+          Ions quadrupole moment          7.02223687 a.u. (Ha)
+         Total quadrupole moment        -13.74289987 a.u. (Ha)
+
+     *********    MAKOV-PAYNE CORRECTION    *********
+
+     Makov-Payne correction with Madelung constant =   2.8373
+
+     Makov-Payne correction     0.00000000 Ry =  0.000 eV (1st order, 1/a0)
+                                0.00010591 Ry =  0.001 eV (2nd order, 1/a0^3)
+                                0.00010591 Ry =  0.001 eV (total)
+
+!    Total+Makov-Payne energy  =     -34.00752612 Ry
+     Corrected vacuum level    =       0.02905059 eV
+
+     convergence has been achieved in   1 iterations
+
+     Using ACE for calculation of exact exchange
+     ACE projected onto    10 (nbndproj) and applied to    10 (nbnd) bands
+
+!!   total energy              =     -34.00763271 Ry
+     Harris-Foulkes estimate   =     -34.00763297 Ry
+     est. exchange err (dexx)  =       0.00000068 Ry
+     - averaged Fock potential =      11.18756060 Ry
+     + Fock energy (ACE)       =      -5.59418656 Ry
+
+     charge density inside the Wigner-Seitz cell:    8.00000000
+
+     reference position (x0):         3.99075622    4.31047608   -0.02891513 bohr
+
+     Dipole moments (with respect to x0):
+     Elect   0.4776  -0.6577  -0.1483 au (Ha),   1.2138  -1.6718  -0.3769 Debye
+     Ionic  -0.0000   0.0000   0.0000 au (Ha),  -0.0000   0.0000   0.0000 Debye
+     Total   0.4776  -0.6577  -0.1483 au (Ha),   1.2138  -1.6718  -0.3769 Debye
+
+     Electrons quadrupole moment        -20.76513673 a.u. (Ha)
+          Ions quadrupole moment          7.02223687 a.u. (Ha)
+         Total quadrupole moment        -13.74289987 a.u. (Ha)
+
+     *********    MAKOV-PAYNE CORRECTION    *********
+
+     Makov-Payne correction with Madelung constant =   2.8373
+
+     Makov-Payne correction     0.00000000 Ry =  0.000 eV (1st order, 1/a0)
+                                0.00010591 Ry =  0.001 eV (2nd order, 1/a0^3)
+                                0.00010591 Ry =  0.001 eV (total)
+
+!    Total+Makov-Payne energy  =     -34.00752680 Ry
+     Corrected vacuum level    =       0.02905059 eV
+
+     EXX self-consistency reached
+
+     Writing all to output data dir ./water_pbe0_corr/water_pbe0_corr.save/ :
+     XML data file, charge density, pseudopotentials, collected wavefunctions
+
+     init_run     :      1.97s CPU      2.64s WALL (       1 calls)
+     electrons    :     54.88s CPU     55.86s WALL (       5 calls)
+
+     Called by init_run:
+     aceinit0     :      0.00s CPU      0.00s WALL (       1 calls)
+     wfcinit      :      0.61s CPU      0.66s WALL (       1 calls)
+     potinit      :      0.58s CPU      1.01s WALL (       1 calls)
+     hinit0       :      0.66s CPU      0.81s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :     43.58s CPU     43.66s WALL (      17 calls)
+     sum_band     :      3.28s CPU      3.26s WALL (      17 calls)
+     v_of_rho     :      7.42s CPU      8.67s WALL (      19 calls)
+     mix_rho      :      0.73s CPU      0.73s WALL (      17 calls)
+
+     Called by c_bands:
+     init_us_2    :      0.30s CPU      0.27s WALL (      35 calls)
+     regterg      :     43.36s CPU     43.44s WALL (      18 calls)
+
+     Called by *egterg:
+     rdiaghg      :      0.02s CPU      0.02s WALL (     295 calls)
+     h_psi        :     34.44s CPU     34.45s WALL (     301 calls)
+     g_psi        :      0.17s CPU      0.16s WALL (     282 calls)
+
+     Called by h_psi:
+     h_psi:calbec :      1.61s CPU      1.63s WALL (     301 calls)
+     vloc_psi     :     29.98s CPU     29.90s WALL (     301 calls)
+     add_vuspsi   :      1.03s CPU      1.01s WALL (     301 calls)
+
+     General routines
+     calbec       :      2.75s CPU      2.82s WALL (     540 calls)
+     fft          :      4.61s CPU      4.66s WALL (     145 calls)
+     ffts         :      0.48s CPU      0.50s WALL (      17 calls)
+     fftw         :     27.62s CPU     27.68s WALL (    1387 calls)
+     fftc         :      5.53s CPU      5.63s WALL (     200 calls)
+     fftcw        :      2.03s CPU      2.03s WALL (     100 calls)
+
+     Parallel routines
+
+     EXX routines
+     exx_grid     :      0.00s CPU      0.00s WALL (       1 calls)
+     exxinit      :      0.75s CPU      0.84s WALL (       5 calls)
+     vexx         :      9.44s CPU     10.74s WALL (       5 calls)
+     matcalc      :      1.14s CPU      1.19s WALL (     239 calls)
+     aceupdate    :      0.02s CPU      0.02s WALL (       5 calls)
+     vexxace      :      2.00s CPU      2.08s WALL (     225 calls)
+     aceinit      :      9.52s CPU     10.82s WALL (       5 calls)
+
+     PWSCF        :   1m 7.91s CPU   1m11.02s WALL
+
+
+   This run was terminated on:  12:47: 5   6Dec2024            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

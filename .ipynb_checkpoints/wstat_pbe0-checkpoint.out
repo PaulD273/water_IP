@@ -1,0 +1,122 @@
+
+     --------------------------------------------------------------------------------------------
+     I/O Summary : input_west
+     --------------------------------------------------------------------------------------------
+     qe_prefix : water_pbe0
+     west_prefix : water_pbe0
+     outdir : /home/paolo/water_2/water_pbe0
+     --------------------------------------------------------------------------------------------
+
+     --------------------------------------------------------------------------------------------
+     I/O Summary : wstat_control
+     --------------------------------------------------------------------------------------------
+     wstat_calculation : S
+     n_pdep_eigen : 50
+     n_pdep_times : 4
+     n_pdep_maxiter : 100
+     n_dfpt_maxiter : 250
+     n_pdep_read_from_file : 0
+     n_steps_write_restart : 1
+     trev_pdep : 0.001
+     trev_pdep_rel : 0.1
+     tr2_dfpt : 1e-16
+     l_kinetic_only : False
+     l_minimize_exx_if_active : False
+     n_exx_lowrank : 10
+     l_use_ecutrho : False
+     qlist : [1]
+     --------------------------------------------------------------------------------------------
+
+     --------------------------------------------------------------------------------------------
+     I/O Summary : server_control
+     --------------------------------------------------------------------------------------------
+     document : {}
+     --------------------------------------------------------------------------------------------
+
+     Program WSTAT v. 6.1.0 git rev. v6.1.0 starts on  6Dec2024 at 12:24:56 
+
+     This program is part of the open-source West suite
+     for massively parallel calculations of excited states in materials; please cite
+         "M. Govoni et al., J. Chem. Theory Comput. 11, 2680 (2015);
+          URL https://west-code.org",
+     in publications or presentations arising from this work.
+
+     Based on the Quantum ESPRESSO v. 7.4
+
+     I/O is Little Endian
+
+     --------------------------------------------------------------------------------------------
+     **MPI** Parallelization Status
+     --------------------------------------------------------------------------------------------
+                     1                   1             1             1             1
+     --------------------------------------------------------------------------------------------
+                     N         =         I      X      P      X      B      X      Z
+                     ^                   ^             ^             ^             ^
+                     |                   |             |             |             |
+                   #rnk                  |             |             |             |
+                                      #image           |             |             |
+                                                     #pool           |             |
+                                                                   #bgrp           |
+                                                                                 #R&G
+     --------------------------------------------------------------------------------------------
+     #prc =            1
+     --------------------------------------------------------------------------------------------
+
+     Reading xml data from directory:
+
+     /home/paolo/water_2/water_pbe0/water_pbe0.save/
+     EXX fraction changed:   0.25
+     EXX Screening parameter changed:    0.0000000
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE0
+                           (   6   4   8   4   0   0   0)
+     EXX-fraction              =        0.25
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum       11449   11449   2869               922329   922329  115313
+
+     Using Slab Decomposition
+
+       ** WARNING : EXX use_ace          = T
+       ** WARNING : EXX alpha            =       0.250000
+       ** WARNING : EXX erfc_scrlen      =       0.000000
+       ** WARNING : EXX gau_scrlen       =       0.000000
+       ** WARNING : EXX ecutfock         =     160.000000
+       ** WARNING : EXX exxdiv_treatment = gb
+     EXX: q-point mesh:     1    1    1
+     EXX: grid of k+q points same as grid of k-points
+     EXX: initializing ACE and reading from file
+     ACE potential read for       10 bands
+     Starting ACE correctly read from file
+       ** WARNING : EXX-exxdiv           =   -4377.544683
+
+     --------------------------------------------------------------------------------------------
+     System Overview
+     --------------------------------------------------------------------------------------------
+     gamma_only           =              T
+     ecutwfc [Ry]         =      40.000000
+     ecutrho [Ry]         =     160.000000
+     omega [au^3]         =   2.700000E+04
+     nbnd                 =             10
+     nkstot               =              1
+     nspin                =              1
+     nelec                =       8.000000
+     npol                 =              1
+     lsda                 =              F
+     noncolin             =              F
+     lspinorb             =              F
+     --------------------------------------------------------------------------------------------
+
+     3DFFT grid
+        s : ( 125, 125, 125)
+        p : ( 125, 125, 125)
+
+     Direct Lattice Cell [a.u.]
+        a1 = (    30.0000000     0.0000000     0.0000000)
+        a2 = (     0.0000000    30.0000000     0.0000000)

@@ -1,0 +1,16 @@
+input_west:
+    qe_prefix: water_pbe
+    west_prefix: water_pbe
+    outdir: /home/paolo/water_2/water_pbe
+
+wstat_control:
+    wstat_calculation: S
+    n_pdep_eigen: 50
+
+wfreq_control:
+    wfreq_calculation: XWGQ
+    n_pdep_eigen_to_use: 50
+    qp_bandrange: [1,5]
+    n_refreq: 300
+    ecut_refreq: 2.0
+    ecut_refreq: 10.0

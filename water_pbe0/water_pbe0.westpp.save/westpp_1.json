@@ -1,0 +1,346 @@
+{
+  "runjob": {
+    "startdate": " 6Dec2024",
+    "starttime": "12:42:34",
+    "completed": true,
+    "endtime": "12:43:51",
+    "enddate": " 6Dec2024"
+  },
+  "software": {
+    "package": "WEST",
+    "program": "WESTPP",
+    "version": "6.1.0",
+    "westgit": "v6.1.0",
+    "website": "https://west-code.org",
+    "citation": "M. Govoni et al., J. Chem. Theory Comput. 11, 2680 (2015).",
+    "qeversion": "7.4"
+  },
+  "config": {
+    "io": {
+      "islittleendian": true
+    }
+  },
+  "parallel": {
+    "nranks": 1,
+    "nimage": 1,
+    "npool": 1,
+    "nbgrp": 1,
+    "nrg": 1,
+    "nproc": 1
+  },
+  "input": {
+    "input_west": {
+      "qe_prefix": "water_pbe0",
+      "west_prefix": "water_pbe0",
+      "outdir": "/home/paolo/water_2/water_pbe0"
+    },
+    "wstat_control": {
+      "wstat_calculation": "S",
+      "n_pdep_eigen": 50,
+      "n_pdep_times": 4,
+      "n_pdep_maxiter": 100,
+      "n_dfpt_maxiter": 250,
+      "n_pdep_read_from_file": 0,
+      "n_steps_write_restart": 1,
+      "trev_pdep": 0.1E-2,
+      "trev_pdep_rel": 0.10000000000000001E+0,
+      "tr2_dfpt": 0.99999999999999998E-16,
+      "l_kinetic_only": false,
+      "l_minimize_exx_if_active": false,
+      "n_exx_lowrank": 10,
+      "l_use_ecutrho": false,
+      "qlist": [
+        1
+      ]
+    },
+    "westpp_control": {
+      "westpp_calculation": "S",
+      "westpp_range": [
+        1,
+        4
+      ],
+      "westpp_format": "C",
+      "westpp_sign": false,
+      "westpp_n_pdep_eigen_to_use": 50,
+      "westpp_r0": [
+        0.0E+0,
+        0.0E+0,
+        0.0E+0
+      ],
+      "westpp_nr": 100,
+      "westpp_rmax": 0.1E+1,
+      "westpp_epsinfty": 0.1E+1,
+      "westpp_box": [
+        0.0E+0,
+        0.0E+0,
+        0.0E+0,
+        0.0E+0,
+        0.0E+0,
+        0.0E+0
+      ],
+      "westpp_n_liouville_to_use": 1,
+      "westpp_l_spin_flip": false,
+      "westpp_l_compute_tdm": false,
+      "westpp_wannier_tr_rel": 0.99999999999999995E-6,
+      "westpp_l_dipole_realspace": false
+    }
+  },
+  "system": {
+    "basis": {
+      "npw": {
+        "proc": [
+          57657
+        ],
+        "min": 57657,
+        "max": 57657,
+        "sum": 57657
+      },
+      "ngm": {
+        "proc": [
+          461165
+        ],
+        "min": 461165,
+        "max": 461165,
+        "sum": 461165
+      },
+      "gamma_only": true,
+      "ecutwfc:ry": 0.4E+2,
+      "ecutrho:ry": 0.16E+3
+    },
+    "cell": {
+      "units": "a.u.",
+      "omega": 0.27E+5,
+      "a1": [
+        0.3E+2,
+        0.0E+0,
+        0.0E+0
+      ],
+      "a2": [
+        0.0E+0,
+        0.3E+2,
+        0.0E+0
+      ],
+      "a3": [
+        0.0E+0,
+        0.0E+0,
+        0.3E+2
+      ],
+      "b1": [
+        0.20943951023931953E+0,
+        0.0E+0,
+        0.0E+0
+      ],
+      "b2": [
+        0.0E+0,
+        0.20943951023931953E+0,
+        0.0E+0
+      ],
+      "b3": [
+        0.0E+0,
+        0.0E+0,
+        0.20943951023931953E+0
+      ],
+      "alat": 0.3E+2,
+      "tpiba": 0.20943951023931953E+0
+    },
+    "electron": {
+      "nbnd": 10,
+      "nkstot": 1,
+      "nspin": 1,
+      "nelec": 0.8E+1,
+      "npol": 1,
+      "lsda": false,
+      "noncolin": false,
+      "lspinorb": false
+    },
+    "3dfft": {
+      "s": [
+        125,
+        125,
+        125
+      ],
+      "p": [
+        125,
+        125,
+        125
+      ]
+    },
+    "bzsamp": {
+      "k": [
+        {
+          "id": 1,
+          "crystcoord": [
+            0.0E+0,
+            0.0E+0,
+            0.0E+0
+          ]
+        }
+      ]
+    }
+  },
+  "output": {
+    "S": {
+      "K000001": {
+        "eks": [
+          -0.28173814369130433E+2,
+          -0.13813035903735294E+2,
+          -0.11357732143607956E+2,
+          -0.88450167582086436E+1
+        ],
+        "sx": [
+          -0.31682772519379419E+2,
+          -0.23231959205313103E+2,
+          -0.24060601009043104E+2,
+          -0.24884046350659311E+2
+        ],
+        "sxx": [
+          -0.21845454722481577E+2,
+          -0.17935097733034063E+2,
+          -0.17849577599116074E+2,
+          -0.18116351227307518E+2
+        ],
+        "fraction": [
+          0.68950577823072001E+0,
+          0.77200108585471094E+0,
+          0.74185917435758841E+0,
+          0.72803076203993322E+0
+        ]
+      }
+    }
+  },
+  "timing": {
+    "WESTPP": {
+      "cpu:sec": 0.7559375E+2,
+      "cpu:hum": "01m-15.5s",
+      "wall:sec": 0.77292495965957642E+2,
+      "wall:hum": "01m-17.2s",
+      "nocalls": 2
+    },
+    "west_readin": {
+      "cpu:sec": 0.33734375E+2,
+      "cpu:hum": "33.7s",
+      "wall:sec": 0.3502376389503479E+2,
+      "wall:hum": "35.0s",
+      "nocalls": 1
+    },
+    "fetch_input": {
+      "cpu:sec": 0.234375E+0,
+      "cpu:hum": "00.2s",
+      "wall:sec": 0.24330401420593262E+0,
+      "wall:hum": "00.2s",
+      "nocalls": 2
+    },
+    "fft": {
+      "cpu:sec": 0.23734375E+2,
+      "cpu:hum": "23.7s",
+      "wall:sec": 0.23948728084564209E+2,
+      "wall:hum": "23.9s",
+      "nocalls": 9
+    },
+    "init_vloc": {
+      "cpu:sec": 0.359375E+0,
+      "cpu:hum": "00.3s",
+      "wall:sec": 0.36407971382141113E+0,
+      "wall:hum": "00.3s",
+      "nocalls": 2
+    },
+    "init_us_1": {
+      "cpu:sec": 0.15625E-1,
+      "cpu:hum": "< 00.1s",
+      "wall:sec": 0.1326298713684082E-1,
+      "wall:hum": "< 00.1s",
+      "nocalls": 2
+    },
+    "v_of_rho": {
+      "cpu:sec": 0.131875E+2,
+      "cpu:hum": "13.1s",
+      "wall:sec": 0.13897686958312988E+2,
+      "wall:hum": "13.8s",
+      "nocalls": 1
+    },
+    "v_xc": {
+      "cpu:sec": 0.11703125E+2,
+      "cpu:hum": "11.7s",
+      "wall:sec": 0.12318357944488525E+2,
+      "wall:hum": "12.3s",
+      "nocalls": 1
+    },
+    "v_h": {
+      "cpu:sec": 0.1484375E+1,
+      "cpu:hum": "01.4s",
+      "wall:sec": 0.15778748989105225E+1,
+      "wall:hum": "01.5s",
+      "nocalls": 1
+    },
+    "do_setup": {
+      "cpu:sec": 0.19375E+1,
+      "cpu:hum": "01.9s",
+      "wall:sec": 0.20376322269439697E+1,
+      "wall:hum": "02.0s",
+      "nocalls": 1
+    },
+    "init_pw_ar": {
+      "cpu:sec": 0.184375E+1,
+      "cpu:hum": "01.8s",
+      "wall:sec": 0.19501371383666992E+1,
+      "wall:hum": "01.9s",
+      "nocalls": 1
+    },
+    "hinit0": {
+      "cpu:sec": 0.1171875E+1,
+      "cpu:hum": "01.1s",
+      "wall:sec": 0.12406620979309082E+1,
+      "wall:hum": "01.2s",
+      "nocalls": 1
+    },
+    "exx_grid": {
+      "cpu:sec": 0.15625E-1,
+      "cpu:hum": "< 00.1s",
+      "wall:sec": 0.12358903884887695E-1,
+      "wall:hum": "< 00.1s",
+      "nocalls": 1
+    },
+    "exx_div": {
+      "cpu:sec": 0.484375E+0,
+      "cpu:hum": "00.4s",
+      "wall:sec": 0.48700594902038574E+0,
+      "wall:hum": "00.4s",
+      "nocalls": 1
+    },
+    "pdep_db": {
+      "cpu:sec": 0.28125E+0,
+      "cpu:hum": "00.2s",
+      "wall:sec": 0.33785295486450195E+0,
+      "wall:hum": "00.3s",
+      "nocalls": 1
+    },
+    "pdep_read": {
+      "cpu:sec": 0.21875E+0,
+      "cpu:hum": "00.2s",
+      "wall:sec": 0.21458840370178223E+0,
+      "wall:hum": "00.2s",
+      "nocalls": 50
+    },
+    "westpp": {
+      "cpu:sec": 0.39484375E+2,
+      "cpu:hum": "39.4s",
+      "wall:sec": 0.39695406198501587E+2,
+      "wall:hum": "39.6s",
+      "nocalls": 1
+    },
+    "fftw": {
+      "cpu:sec": 0.33640625E+2,
+      "cpu:hum": "33.6s",
+      "wall:sec": 0.33694317817687988E+2,
+      "wall:hum": "33.6s",
+      "nocalls": 36
+    },
+    "sqvc_init": {
+      "cpu:sec": 0.24375E+1,
+      "cpu:hum": "02.4s",
+      "wall:sec": 0.24644885063171387E+1,
+      "wall:hum": "02.4s",
+      "nocalls": 4
+    }
+  }
+}
